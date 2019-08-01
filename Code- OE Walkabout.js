@@ -120,5 +120,6 @@ function sendResultEmail()
   for (i=0;i<send_list.length;i++)
   {
      MailApp.sendEmail(send_list[i][0],"Dear "+ send_list[i][1] + "\n\n" + contentdata[0]+ "\n"+contentdata[1]+"\n\n"+contentdata[2]+"\n"+contentdata[3]);
+     Logger.log(send_list);
   }
 }
